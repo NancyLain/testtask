@@ -1,0 +1,35 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.posts{
+
+	font-family: Roboto, sans-serif;
+	margin:2%;
+	text-align: center;
+	background-color: #8FBC8F;
+
+	.block-left{
+		width: 50%;
+		float:left;
+		.from_group {
+			margin:2%;
+			text-align: center;
+			font-size: 24px;
+           line-height: 40px;
+
+		}
+
+	}
+
+	.block-right{
+		width:50%;
+		float:right;
+		
+	}
+	.container{
+		height:300px;
+		overflow: scroll;
+	}
+		
+
+}

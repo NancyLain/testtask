@@ -1,0 +1,26 @@
+<div class="block-right">
+
+	<div id = "count">
+		<h1> <%= Post.count_to_s %> </h1>
+	</div>
+	
+	<div class="container">
+		<div id = "show">
+			<%= render @posts %>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="block-left">
+	<%= form_for(@post,remote: true) do |f| %>
+
+	<div class="from_group">
+		<%= f.text_field :title, id:'name_field' %>
+		<%= f.submit 'Отправить'%>
+	</div>
+	<% end %>
+</div>
+
+
